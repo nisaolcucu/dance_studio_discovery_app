@@ -26,6 +26,7 @@ Then, run the following command in your terminal to get the project dependencies
 
 ```sh
 flutter pub get
+```
 
 # 🔥 Firebase Integration
 
@@ -48,6 +49,7 @@ To use this project with Firebase, follow these steps:
 
    ```sh
    flutter pub add firebase_core firebase_auth cloud_firestore
+   ```
 ## 🔹 Firebase Database: Creating Collection and Document
 
 In Firebase Firestore, you can create a `dance_studios` collection and store each dance studio as a document.
@@ -71,6 +73,7 @@ Here is an example of a document:
   "longitude": -74.005974,
   "styles": ["Salsa", "Hip-hop", "Ballet"]
 }
+```
 ### 🗺 Google Maps API Key Integration
 
 To use Google Maps in your Flutter application, you need to obtain a Google Maps API Key from the Google Developer Console.
@@ -115,6 +118,7 @@ To use Google Maps in your Flutter application, you need to obtain a Google Maps
             android:value="YOUR-API-KEY-HERE"/>
     </application>
 </manifest>
+```
 ### 🎯 Packages Used
 
 Here are some important packages used in this project:
@@ -132,6 +136,7 @@ dependencies:
   cloud_firestore: ^5.6.3
   google_maps_flutter: ^2.10.0
   intl: ^0.20.2
+  ```
 
 ### 📝 Gitignore
 
