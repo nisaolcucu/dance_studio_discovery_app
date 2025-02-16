@@ -28,6 +28,8 @@ Then, run the following command in your terminal to get the project dependencies
 flutter pub get
 ```
 
+---
+
 # 🔥 Firebase Integration
 
 ### Running the project with Firebase
@@ -74,6 +76,9 @@ Here is an example of a document:
   "styles": ["Salsa", "Hip-hop", "Ballet"]
 }
 ```
+
+---
+
 ### 🗺 Google Maps API Key Integration
 
 To use Google Maps in your Flutter application, you need to obtain a Google Maps API Key from the Google Developer Console.
@@ -119,6 +124,25 @@ To use Google Maps in your Flutter application, you need to obtain a Google Maps
     </application>
 </manifest>
 ```
+## Configuring for Android
+
+To use the Google Maps SDK on Android, the minSDK must be set to 23.
+
+    android/app/build.gradle
+
+    ```gradle
+    android{
+        defaultConfig {
+        applicationId = "com.example.flutter_application"
+        minSdk 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        }
+    }
+    ```
+---
+
 ### 🎯 Packages Used
 
 Here are some important packages used in this project:
@@ -137,6 +161,8 @@ dependencies:
   google_maps_flutter: ^2.10.0
   intl: ^0.20.2
   ```
+
+---
 
 ### 📝 Gitignore
 
