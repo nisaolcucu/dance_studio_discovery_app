@@ -143,6 +143,51 @@ To use the Google Maps SDK on Android, the minSDK must be set to 23.
     ```
 ---
 
+## 🔒 Secure API Keys & Firebase Configuration
+
+To keep sensitive information secure, the following files are added to .gitignore and should not be included in version control:
+
+Android: android/app/google-services.json
+```
+{
+  "project_info": {
+    "project_number": "702575491728",
+    "project_id": "flutter-application-214d4",
+    "storage_bucket": "flutter-application-214d4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702575491728:android:31d6b5561ac6d667ae7615",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "API_KEY_HERE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+```
+
+iOS: ios/Runner/GoogleService-Info.plist
+```
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>API_KEY_HERE</string>
+```
+
 ### 🎯 Packages Used
 
 Here are some important packages used in this project:
