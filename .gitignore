@@ -50,3 +50,5 @@ android/app/google-services.json
 
 # firebase configuration
 lib/firebase_options.dart
+
+ios/Runner/GoogleService-Info.plist
